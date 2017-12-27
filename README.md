@@ -2,7 +2,7 @@
 
 Given a 3D wireframe model in OBJ, STL, OFF, or OM format, osso generates 3D models for unique connectors at every vertex, as well as length for every edge.
 
-###Compatibility
+### Compatibility
 osso is compatible with, and tested on:
 
 * OS X *(tested on 10.11)*
@@ -10,7 +10,7 @@ osso is compatible with, and tested on:
 * Fedora *(tested on Fedora 23)*
 
 
-##Installation
+## Installation
 
 1. cURL the osso installer file, then run it!
 
@@ -26,7 +26,7 @@ osso will walk you through installing all of its dependencies, and compile and
 install its own binaries into your system path. Once that's all done, you can start using it!
 
 
-##Using osso
+## Using osso
 osso comes with three object mesh models pre-installed, which can be found at
 `/opt/osso/support/mesh/`. These are a great place to start to see how Bucky
 handles creating connector models. We will use the icosahedron model for this walkthrough.
@@ -68,7 +68,7 @@ handles creating connector models. We will use the icosahedron model for this wa
    that the sphere (center of the connector) and the side with the most
    connections sit on the printer bed.
    
-   ###Important Note
+   ### Important Note
    ```
    Currently, osso doesn't number the connector parts, so it is
    important to note which connectors (0, 1, 2...n) are placed on the printer
@@ -88,7 +88,7 @@ handles creating connector models. We will use the icosahedron model for this wa
 5. Save G-Code `File - Save GCode...` to an SD card, and print on your 3D printer.
 
 
-###(Re)Compiling osso's Dependent Executables
+### (Re)Compiling osso's Dependent Executables
 If for some reason you need to recompile the dependent osso executable files,
 you can do so super easily by re-running the install file using the appropriate
 flag:
@@ -101,7 +101,7 @@ Optionally, if you are working with osso on OS X, you can open up the XCode
 project and build the executables there. The XCode project is located at `/opt/osso/src/openmesh/xcode`.
 
 
-###Updating osso
+### Updating osso
 If you'd like to do an in-place upgrade of osso, you can do so by running osso
 with the `-u` flag:
 
@@ -111,7 +111,7 @@ $ osso -u
 Running the above will pull the latest code from the `master` branch down to
 your system.
 
-###Removing osso
+### Removing osso
 It's pretty easy to remove osso, but, be forewarned, you will not be able to do
 so without some pretty passive-agressive efforts to deter you:
 
